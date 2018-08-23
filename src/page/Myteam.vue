@@ -53,7 +53,7 @@ export default {
       this.$router.push({name: 'Login'})
       return false
     }
-    // this.getJuniorData()
+    // this.getTeamData()
   },
   mounted () {
   },
@@ -61,7 +61,7 @@ export default {
     fn_search (val) {
       alert(val)
     },
-    getJuniorData () {
+    getTeamData () {
       let self = this
       self.$api.get(
         'AgentInfo/agentInfo',
